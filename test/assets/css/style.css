@@ -135,8 +135,8 @@ h6 {
 }
 
 #quotes{
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 19px;
     font-style: italic;
 }
 
@@ -1301,7 +1301,16 @@ Resume Timeline
     margin: 0;
 }
 
-/* === Blog Section === */
+/* === Blog Section / Other experiences === */
+#Cameroon{
+    
+}
+
+.txtCenter{
+    height: 100%;
+    vertical-align: middle;
+}
+
 .latest-blog-section {
   
 }
