@@ -1302,14 +1302,31 @@ Resume Timeline
 }
 
 /* === Blog Section / Other experiences === */
-#Cameroon{
+@media(min-width:992px) {
+#Cameroon .row{
+    display: table;
     
 }
 
+#Cameroon{
+    margin-bottom: 15px;
+}
+
+#photoCameroon{
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
 .txtCenter{
-    height: 100%;
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    text-align: justify;
     vertical-align: middle;
 }
+}
+
 
 .latest-blog-section {
   
