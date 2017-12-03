@@ -15,7 +15,7 @@
 ?>
 
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html>
 <head>
 	<script>alert("Thank you for contact us. As early as possible  we will contact you.");</script>
 	<meta HTTP-EQUIV="REFRESH" content="0; url=https://rubensancor.github.io/test/index.html"> 
