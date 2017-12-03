@@ -178,7 +178,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary{
-    background-color:#277bae;
+    background-color:#0079BB;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -189,8 +189,8 @@ h6 {
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
+    background-color: #001846;
+    border-color: #001846;
 }
 
 /*btn-info*/
@@ -367,7 +367,7 @@ ul.list-check li::before {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 16px;
-	color: #52b3d9;
+	color: #00A6F5;
 }
 .intro h1 span{
 	color: #68c3a3;
@@ -438,7 +438,7 @@ SOCIAL ICON
 
 /* === NAVIGATION === */
 .header {
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     position: relative;
     width: 100%;
     z-index: 998;
@@ -532,12 +532,13 @@ SOCIAL ICON
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
-    color: #68c3a3;
+    color: #00A6F5;
 }
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
     font-size: 18px;
+    padding-top: 11px;
 }
 
 .navbar-custom .nav .open > a,
