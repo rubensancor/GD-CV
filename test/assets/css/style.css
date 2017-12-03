@@ -883,7 +883,7 @@ Resume Timeline
 }
 
 .timeline>li .timeline-content:hover {
-    background: #277bae;
+    background: #00A6F5;
     color: #fff;
 }
 
@@ -904,7 +904,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #00A6F5;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::before {
@@ -916,7 +916,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #00A6F5;
     border-left: 0;
 }
 
@@ -938,7 +938,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #00A6F5;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
@@ -951,7 +951,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #00A6F5;
     border-left: 0;
 }
 
@@ -1010,7 +1010,7 @@ Resume Timeline
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #00A6F5;
 }
 .progress-bar span{
     position: absolute;
@@ -1121,7 +1121,7 @@ Resume Timeline
 
 
 #filter li a {
-    color: #68c3a3;
+    color: #00A6F5;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -1131,7 +1131,7 @@ Resume Timeline
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #68c3a3;
+    background: #00A6F5;
     color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
@@ -1188,7 +1188,7 @@ Resume Timeline
 
 .links a i{
     position: relative;
-    color: #68c3a3;
+    color: #00A6F5;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -1203,7 +1203,7 @@ Resume Timeline
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #00A6F5;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1567,7 +1567,7 @@ Icon for all respective meta
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
+	background-color: #00A6F5;
 	display: block;
 	width: 28px;
 	height: 28px;
