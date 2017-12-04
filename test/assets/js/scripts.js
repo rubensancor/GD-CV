@@ -257,6 +257,22 @@ jQuery(function ($) {
 
     });
 
+    // -------------------------------------------------------------
+    // Change text
+    // -------------------------------------------------------------
+    var text = ["Ekaitza", "Zinic", "Rubén Sánchez"];
+    var counter = 0;
+    var elem = $("#changeText");
+    setInterval(change, 3500);
+    function change() {
+        elem.fadeOut(function(){
+            elem.html(text[counter]);
+            counter++;
+            if(counter >= text.length) { counter = 0; }
+            elem.fadeIn();
+        });
+    }
+
 
     // -------------------------------------------------------------
     // WOW JS
@@ -276,70 +292,83 @@ jQuery(function ($) {
     // Google Map
     // -------------------------------------------------------------
 
-    (function () {
-        var myLatlng = new google.maps.LatLng(43.250232, -2.9377295);
+    function initMap() {
+        var uluru = {lat: 43.250232, lng: -2.9377295};
+        var map = new google.maps.Map(document.getElementById('mapCanvas'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
 
-            var styles = [
-                {
-                    featureType: "landscape",
-                    stylers: [
-                        { color: '#f7f7f7' }
-                    ]
-                },{
-                    featureType: "natural",
-                    stylers: [
-                        { hue: '#00ffe6' }
-                    ]
-                },{
-                    featureType: "road",
-                    stylers: [
-                        { hue: '#fff' },
-                        { saturation: -70 }
-                    ]
-                },{
-                    featureType: "building",
-                    elementType: "labels",
-                    stylers: [
-                        { hue: '' }
-                    ]
-                },{
-                    featureType: "poi", //points of interest
-                    stylers: [
-                        { hue: '' }
-                    ]
-                }
-            ];
 
-            var mapOptions = {
-                zoom: 15,
-                scrollwheel: false,
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                disableDefaultUI: true,
-                styles: styles
-            }
-            var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
+    // (function () {
+    //     var myLatlng = new google.maps.LatLng(43.250232, -2.9377295);
 
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                animation: google.maps.Animation.DROP,
-                title: 'Hello World!'
-            });
+    //         var styles = [
+    //             {
+    //                 featureType: "landscape",
+    //                 stylers: [
+    //                     { color: '#f7f7f7' }
+    //                 ]
+    //             },{
+    //                 featureType: "natural",
+    //                 stylers: [
+    //                     { hue: '#00ffe6' }
+    //                 ]
+    //             },{
+    //                 featureType: "road",
+    //                 stylers: [
+    //                     { hue: '#fff' },
+    //                     { saturation: -70 }
+    //                 ]
+    //             },{
+    //                 featureType: "building",
+    //                 elementType: "labels",
+    //                 stylers: [
+    //                     { hue: '' }
+    //                 ]
+    //             },{
+    //                 featureType: "poi", //points of interest
+    //                 stylers: [
+    //                     { hue: '' }
+    //                 ]
+    //             }
+    //         ];
 
-            var contentString = '' +
-                    '' +
-                    '';
+    //         var mapOptions = {
+    //             zoom: 15,
+    //             scrollwheel: false,
+    //             center: myLatlng,
+    //             mapTypeId: google.maps.MapTypeId.ROADMAP,
+    //             disableDefaultUI: true,
+    //             styles: styles
+    //         }
+    //         var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
 
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
+    //         var marker = new google.maps.Marker({
+    //             position: myLatlng,
+    //             map: map,
+    //             animation: google.maps.Animation.DROP,
+    //             title: 'Hello World!'
+    //         });
 
-            google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
-            });
+    //         var contentString = '' +
+    //                 '' +
+    //                 '';
 
-    }());
+    //         var infowindow = new google.maps.InfoWindow({
+    //             content: contentString
+    //         });
+
+    //         google.maps.event.addListener(marker, 'click', function () {
+    //             infowindow.open(map, marker);
+    //         });
+
+    // }());
 
 
 });
