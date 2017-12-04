@@ -17,6 +17,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
 	<script>alert("Thank you for contact us. As early as possible  we will contact you.");</script>
 	<meta HTTP-EQUIV="REFRESH" content="0; url=https://rubensancor.github.io/test/index.html"> 
 </head>
