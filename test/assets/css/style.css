@@ -283,7 +283,7 @@ ul.list-check li{
     line-height: 32px;
 }
 ul.list-check li::before {
-    content: "\f00c";
+    content: "\f054";
     font-family: fontawesome;
     color: #277bae;
     margin-right: 10px;
@@ -1853,4 +1853,11 @@ Icon for all respective meta
 
 .glyphicon-info-sign{
     font-size: 18px
+}
+
+.quest{
+    display: inline-block; 
+    vertical-align: inherit;
+    width: 1em;
+    height: 2.5em;
 }
