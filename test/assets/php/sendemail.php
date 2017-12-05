@@ -10,7 +10,7 @@
 
 	$body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 
-	$success = @mail($email_to, $subject, $body);
+	$success = @mail("rubensancor@gmail.com", "asdf", "asdf");
 	
 ?>
 
