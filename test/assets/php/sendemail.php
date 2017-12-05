@@ -14,9 +14,10 @@
 	
 ?>
 
-<!-- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<script>alert("Thank you for contact us. As early as possible  we will contact you.");</script>
 	<meta charset="UTF-8" HTTP-EQUIV="REFRESH" content="0; url=https://rubensancor.github.io/test/index.html"> 
-</head> -->
+</head> 
+</html>
