@@ -1284,7 +1284,7 @@ Resume Timeline
 
 /* === Facts Section === */
 .facts-section {
-    background: url(../../assets/images/counter-bg.jpg) no-repeat center center;
+    background: url(../../assets/images/wow-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
@@ -1729,7 +1729,7 @@ Icon for all respective meta
 
 /*SERVICE SECTION*/
 .service-section {
-    background: url(../../assets/images/service-bg.jpg) no-repeat center center;
+    background: url(../../assets/images/wow-bg.jpg) no-repeat center center;
     background-size: cover;
     padding:120px 0;
 }
