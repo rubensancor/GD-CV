@@ -373,7 +373,7 @@ ul.list-check li::before {
 	color: #68c3a3;
 }
 .intro p{
-	color: #f7f7f7;
+    color: #f7f7f7;
 	margin-bottom: 40px;
 }
 
@@ -1291,7 +1291,7 @@ Resume Timeline
 }
 
 .tt-overlay-bg {
-    background: rgba(26, 30, 35, 0.85);
+    background: rgba(143, 144, 145, 0.568);
     padding: 110px 0;
 }
 
