@@ -48,7 +48,7 @@ body, html{
 /* Link style
 ---------------------------------------------------------*/
 a {
-    color: #68c3a3;
+    color: #277bae;
 }
 a,
 a > * {
@@ -134,6 +134,12 @@ h6 {
     font-size     : 12px;
 }
 
+#quotes{
+    font-weight: 300;
+    font-size: 19px;
+    font-style: italic;
+}
+
 
 
 /* === FORM STYLE === */
@@ -172,7 +178,7 @@ h6 {
 
 /*btn-primary*/
 .btn-primary{
-    background-color:#68c3a3;
+    background-color:#0079BB;
     border-color: rgba(51, 51, 51, 0.15);
 }
 
@@ -183,8 +189,8 @@ h6 {
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #4eb28f;
-    border-color: #4eb28f;
+    background-color: #001846;
+    border-color: #001846;
 }
 
 /*btn-info*/
@@ -225,6 +231,24 @@ button:focus {
     outline: none;
 }
 
+/*VIDEO*/
+#backgroundVideo {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.container h1 {
+    color: white;
+}
+
 
 /*IMAGES*/
 img {
@@ -259,9 +283,9 @@ ul.list-check li{
     line-height: 32px;
 }
 ul.list-check li::before {
-    content: "\f00c";
+    content: "\f054";
     font-family: fontawesome;
-    color: #68c3a3;
+    color: #277bae;
     margin-right: 10px;
 }
 
@@ -306,13 +330,14 @@ ul.list-check li::before {
 
 
 #home {
-	background: url(../images/home2.jpg) no-repeat center center;
+	/* background: url(../images/home2.jpg) no-repeat center center; */
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #222;
 	background-size: cover;
 	padding: 0;
-	position: relative;
+    position: relative;
+    overflow: hidden;
 }
 #home:before {
 	content: "";
@@ -327,8 +352,8 @@ ul.list-check li::before {
 .intro {
 	position: absolute;
 	width: 100%;
-	top: 50%;
-	left: 0;
+    top: 50%;
+	left: -25%;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
@@ -342,13 +367,13 @@ ul.list-check li::before {
 	font-size: 60px;
 	line-height: 80px;
 	margin-bottom: 16px;
-	color: #52b3d9;
+	color: #00A6F5;
 }
 .intro h1 span{
 	color: #68c3a3;
 }
 .intro p{
-	color: #f7f7f7;
+    color: #f7f7f7;
 	margin-bottom: 40px;
 }
 
@@ -413,7 +438,7 @@ SOCIAL ICON
 
 /* === NAVIGATION === */
 .header {
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
     position: relative;
     width: 100%;
     z-index: 998;
@@ -507,12 +532,13 @@ SOCIAL ICON
 .navbar-custom .navbar-nav > li.active > a {
     background: none;
     outline: 0;
-    color: #68c3a3;
+    color: #00A6F5;
 }
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
     font-size: 18px;
+    padding-top: 11px;
 }
 
 .navbar-custom .nav .open > a,
@@ -541,7 +567,7 @@ SOCIAL ICON
     display:inline-block;
 }
 .short-info ul li {
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
@@ -582,7 +608,6 @@ SOCIAL ICON
 
 .myphoto{
     position: relative;
-    background: url(../../assets/images/photo-frame.png) bottom center no-repeat;
     background-size: contain;
 }
 
@@ -857,7 +882,7 @@ Resume Timeline
 }
 
 .timeline>li .timeline-content:hover {
-    background: #68c3a3;
+    background: #00A6F5;
     color: #fff;
 }
 
@@ -878,7 +903,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::before {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #00A6F5;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::before {
@@ -890,7 +915,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::before {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #00A6F5;
     border-left: 0;
 }
 
@@ -912,7 +937,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li .timeline-panel:hover::after {
-    border-left: 12px solid #68c3a3;
+    border-left: 12px solid #00A6F5;
 }
 
 .timeline>li.timeline-inverted .timeline-panel::after {
@@ -925,7 +950,7 @@ Resume Timeline
     transition: all 400ms;
 }
 .timeline>li.timeline-inverted .timeline-panel:hover::after {
-    border-right: 12px solid #68c3a3;
+    border-right: 12px solid #00A6F5;
     border-left: 0;
 }
 
@@ -984,7 +1009,7 @@ Resume Timeline
 }
 
 .progress-bar {
-    background-color: #68c3a3;
+    background-color: #00A6F5;
 }
 .progress-bar span{
     position: absolute;
@@ -1018,7 +1043,15 @@ Resume Timeline
     margin-bottom: 5px;
 }
 
-
+/* === Skills CSS === */
+.skill {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin: 40px auto;
+    text-align: center;
+}
 
 /* === Chart CSS  === */
 .chart {
@@ -1095,7 +1128,7 @@ Resume Timeline
 
 
 #filter li a {
-    color: #68c3a3;
+    color: #00A6F5;
     display: block;
     text-transform: uppercase;
     padding: 0 15px;
@@ -1105,7 +1138,7 @@ Resume Timeline
 #filter li a.active,
 #filter li a:hover {
     position: relative;
-    background: #68c3a3;
+    background: #00A6F5;
     color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
@@ -1162,7 +1195,7 @@ Resume Timeline
 
 .links a i{
     position: relative;
-    color: #68c3a3;
+    color: #00A6F5;
     font-size: 16px;
     margin: 0 13px;
     z-index: 100;
@@ -1177,7 +1210,7 @@ Resume Timeline
     top: -7px;
     width: 30px;
     height: 30px;
-    border: 1px solid #68c3a3;
+    border: 1px solid #00A6F5;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1250,14 +1283,14 @@ Resume Timeline
 
 /* === Facts Section === */
 .facts-section {
-    background: url(../../assets/images/counter-bg.jpg) no-repeat center center;
+    background: url(../../assets/images/wow-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     color: #fff;  
 }
 
 .tt-overlay-bg {
-    background: rgba(26, 30, 35, 0.85);
+    background: rgba(143, 144, 145, 0.568);
     padding: 110px 0;
 }
 
@@ -1276,7 +1309,33 @@ Resume Timeline
     margin: 0;
 }
 
-/* === Blog Section === */
+/* === Blog Section / Other experiences === */
+@media(min-width:992px) {
+#Cameroon .row{
+    display: table;
+    
+}
+
+#Cameroon{
+    margin-bottom: 15px;
+}
+
+#photoCameroon{
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.txtCenter{
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    text-align: justify;
+    vertical-align: middle;
+}
+}
+
+
 .latest-blog-section {
   
 }
@@ -1515,7 +1574,7 @@ Icon for all respective meta
 }
 
 .scroll-up a {
-	background-color: #68c3a3;
+	background-color: #00A6F5;
 	display: block;
 	width: 28px;
 	height: 28px;
@@ -1669,7 +1728,7 @@ Icon for all respective meta
 
 /*SERVICE SECTION*/
 .service-section {
-    background: url(../../assets/images/service-bg.jpg) no-repeat center center;
+    background: url(../../assets/images/wow-bg.jpg) no-repeat center center;
     background-size: cover;
     padding:120px 0;
 }
@@ -1789,4 +1848,15 @@ Icon for all respective meta
     border: 5px solid #FFF;
     padding: 5px;
     box-shadow: 0 0px 0px 1px #eee;
+}
+
+.glyphicon-info-sign{
+    font-size: 18px
+}
+
+.quest{
+    display: inline-block; 
+    vertical-align: inherit;
+    width: 1em;
+    height: 2.5em;
 }
