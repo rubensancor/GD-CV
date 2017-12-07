@@ -1876,11 +1876,6 @@ Icon for all respective meta
     height: 2.5em;
 }
 
-
-@media (min-width : 992px) {
 #thankyou_message{
-    padding-top: 25%;
-    vertical-align: center;
     color: #00A6F5;
-}
 }
