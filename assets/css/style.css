@@ -330,7 +330,6 @@ ul.list-check li::before {
 
 
 #home {
-	/* background: url(../images/home2.jpg) no-repeat center center; */
 	-webkit-background-attachment: fixed;
     background-attachment: fixed;
 	background-color: #222;
@@ -353,8 +352,8 @@ ul.list-check li::before {
 	position: absolute;
 	width: 100%;
     top: 50%;
-	left: -25%;
-	text-align: center;
+    left: -5%;
+	text-align: right;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
 		-ms-transform: translate(0%, -50%);
@@ -362,6 +361,22 @@ ul.list-check li::before {
 			transform: translate(0%, -50%);
 	padding: 0 15px;
 }
+
+@media (max-width : 640px) {
+    .intro {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        text-align: center;
+        -webkit-transform: translate(0%, -50%);
+           -moz-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+             -o-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        padding: 0 15px;
+    }
+    }
 
 .intro h1{
 	font-size: 60px;
