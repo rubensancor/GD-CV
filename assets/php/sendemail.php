@@ -8,6 +8,6 @@ if(isset($_POST['submit'])){
 	$email_from = $email;
 	$email_to = 'rubensancor@gmail.com'; //replace with your email
 
-	$success = mail("rubensancor@gmail.com", "asdf", "asdf");
+	$success = mail("rubensancor@gmail.com", "asdf", "asdf", "From $name");
 }
 ?>
