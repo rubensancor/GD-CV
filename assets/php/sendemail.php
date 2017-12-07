@@ -1,13 +1,16 @@
 <?php
-if(isset($_POST['submit'])){
-	$name = $_POST['name']; 
-	$email = $_POST['email'];  
-	$subject = $_POST['subject'];  
-	$message = $_POST['message']; 
+if(isset($_POST["submit"])) {
+$recipient = "rubensancor@gmail.com"; //my email
+echo $subject = $_POST ["subject"];
+echo $name = $_POST ["name"];
+echo $email = $_POST["email"];
+echo  $message = $_POST["message"];
 
-	$email_from = $email;
-	$email_to = 'rubensancor@gmail.com'; //replace with your email
+ $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
-	$success = mail("rubensancor@gmail.com", "asdf", "asdf", "From $name");
+ mail($recipient, $subject, $mailBody, "From: $name <$email>");
+
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
 }
 ?>
