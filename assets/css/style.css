@@ -385,7 +385,7 @@ ul.list-check li::before {
 	color: #00A6F5;
 }
 .intro h1 span{
-	color: #68c3a3;
+	color: #00A6F5;
 }
 .intro p{
     color: #f7f7f7;
@@ -445,7 +445,7 @@ SOCIAL ICON
 }
 
 .social-icons a i:hover::after{
-    background: #68c3a3;
+    background: #00A6F5;
     border: 1px solid transparent;
     z-index: 0;
 }
