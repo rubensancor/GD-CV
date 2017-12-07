@@ -81,7 +81,7 @@ function validEmail(email) { // see:
       xhr.onreadystatechange = function() {
           console.log( xhr.status, xhr.statusText )
           console.log(xhr.responseText);
-          document.getElementById('gform').style.display = 'none'; // hide form
+          document.getElementById('contact-form').style.display = 'none'; // hide form
           document.getElementById('thankyou_message').style.display = 'block';
           return;
       };

@@ -1849,7 +1849,7 @@ Icon for all respective meta
 }
 
 .personal-info h1 span{
-    color:#68c3a3;
+    color:#00A6F5;
 }
 .personal-info p {
     margin-bottom: 40px;
@@ -1874,4 +1874,10 @@ Icon for all respective meta
     vertical-align: inherit;
     width: 1em;
     height: 2.5em;
+}
+
+#thankyou_message{
+    padding-top: 25%;
+    vertical-align: center;
+    color: #00A6F5;
 }
